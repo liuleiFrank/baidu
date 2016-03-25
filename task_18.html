@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <title>task_18</title>
+  	<script type="text/javascript">
+   
+
+    window.onload=function(){
+
+    var olr=document.getElementById("lr");
+    var orr=document.getElementById("rr");
+    var olc=document.getElementById("lc");
+    var orc=document.getElementById("rc");
+    var oNum=document.getElementById("num");
+    var text=document.getElementById("text");
+
+
+          function createNode(){
+      var oNode=document.createElement("div");
+      oNode.style.width="auto";
+      oNode.style.height="50px";
+      oNode.style.background="#F00";
+      oNode.style.display="inline";
+      oNode.style.lineHeight="50px";
+      oNode.style.paddingLeft="5px";
+      oNode.style.paddingRight="5px";
+      oNode.style.marginLeft="10px";
+      oNode.style.textAlign="center";
+      return oNode;
+    }
+    function rr(num){
+      var oNode=createNode();
+      var oText=document.createTextNode(num);
+
+      oNode.appendChild(oText);
+      oNum.appendChild(oNode);
+    }
+
+    function lr(num){
+      var oNode=createNode();
+      var oText=document.createTextNode(num);
+      oNode.appendChild(oText);
+      if(oNum.hasChildNodes()){
+      oNum.insertBefore(oNode,oNum.firstChild);
+    }else{
+      oNum.appendChild(oNode);
+          }
+    }
+
+
+    function lc(){
+       var oBtn=oNum.firstChild;
+        alert(oBtn.innerHTML);
+      oNum.removeChild(oNum.firstChild);
+
+    }
+
+    function rc(){
+       var oBtn=oNum.lastChild;
+       alert(oBtn.innerHTML);
+      oNum.removeChild(oNum.lastChild);
+    }
+
+      orr.onclick=function(){
+        
+        var num=text.value;
+        if(!Number(num)){
+          alert("输入不合法，请输入数字");
+              text.value="";
+        }
+        else{
+        rr(num);
+        text.value="";
+           }
+      };
+
+
+     olr.onclick=function(){
+        
+        var num=text.value;
+           if(!Number(num)){
+          alert("输入不合法，请输入数字");
+              text.value="";
+        }else{
+        lr(num);
+        text.value="";
+            }
+      };
+
+      olc.onclick=function(){
+          lc();
+     
+      };
+
+      orc.onclick=function(){
+        rc();
+      }
+    
+
+    };
+    </script>
+
+</head>
+<body>
+
+  <input type="text" id="text">
+  <input type="button" value="左侧入" id="lr"/>
+  <input type="button" value="右侧入" id="rr" />
+
+  &nbsp;&nbsp;&nbsp;&nbsp;    
+  <input type="button" value="左侧出" id="lc"/>
+  <input type="button" value="右侧出" id="rc"/>
+
+<div id="num"></div>
+</body>
+</html>
