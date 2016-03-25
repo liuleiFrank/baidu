@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>typeof Example</title>
+  
+  <style type="text/css">
+  body{
+    background: #C8C8C8;
+  }
+  #nav{
+    position: absolute;
+    width: 1280px;
+    height: 57px;
+    background: #FFF;
+    top: 25px;
+    left: 50px;
+    font-family: "微软雅黑";
+  }
+  .topBar{
+    float: right;
+    margin-right: 61px;
+    text-decoration: none;
+    line-height: 57px;
+    color: #AEB0B5;
+  }
+  a:hover{
+    color:red;
+  }
+  #abo,#lo{
+    color: red;
+  }
+  .logo{
+    margin-left: 100px;
+    margin-top: 21px;
+  }
+  label{
+    margin-left: 10px;
+    
+  }
+  #b1{
+    width: 1280px;
+    height: 692px;
+    background: url(img/bg3.jpg);
+    position: absolute;
+    top: 82px;
+    left: 50px;
+    font-family: "微软雅黑";
+  }
+  #login{
+    position: absolute;
+    right: 40px;
+    top: 18px;
+  }
+  #line{
+     height: 2px;
+  width: 47px;
+  background: red;
+    margin-left: 591px;
+  margin-top: -1px;
+  }
+
+  h1{
+    width: 503px;
+    height: 64px;
+    position: relative;
+    top: 73px;
+    left: 120px;
+    color: #FFF;
+    font-size: 60px;
+    font-weight: 100;
+  }
+  #text1{
+    width: 304px;
+    height: 57px;
+    color: #FFF;
+    position: relative;
+    top: 142px;
+    left: 120px;
+    font-size: 21px;
+  }
+  #btn1{
+    background: #E7504D;
+    color: #FFF;
+    width: 311px;
+    height: 65px;
+    position: relative;
+    top: 245px;
+    left:120px;
+    padding: 0;
+    border: none;
+    font-size: 30px;
+  }
+
+  #b2{
+    width: 1280px;
+    height: 250px;
+    background: #FFF;
+    position: absolute;
+    top: 774px;
+    left: 50px;
+    font-family: "微软雅黑";
+  }
+  #im{
+    position: relative;
+    top: 45px;
+  }
+  .icon1{
+   margin-left: 145px;
+
+  }
+  .icon2{
+   margin-left: 288px;
+
+  }
+  .icon3{
+   margin-left: 288px;
+
+  }
+  .icon4{
+   margin-left: 288px;
+
+  }
+  #tx{
+    position: relative;
+    top: 133px;
+  }
+  .p1{
+    float: left;
+    margin-left:86px;
+    color: #000;
+    margin-top: -38px;
+
+  }
+    .p2{
+    float: left;
+    margin-left:86px;
+    color: #000;
+   margin-top: -38px;
+  }
+    .p3{
+    float: left;
+    margin-left:86px;
+    color: #000;
+    margin-top: -38px;
+  }
+    .p4{
+    float: left;
+    margin-left:39px;
+    color: #000;
+    margin-top: -38px;
+  }
+  #d1{
+    float: left;
+     height: 44px;
+    width: 2px;
+    margin-left: 85px;
+    background: #989999;
+    display: block;
+    margin-top: -35px;
+  }
+   #d2{
+    float: left;
+     height: 44px;
+    width: 2px;
+    margin-left: 85px;
+    background: #989999;
+    margin-top: -35px;
+  }
+   #d3{
+    float: left;
+    height: 44px;
+    width: 2px;
+    margin-left: 85px;
+    background: #989999;
+    margin-top: -35px;
+  }
+  #b3{
+    width: 1280px;
+    height: 360px;
+    position: absolute;
+    left:50px;
+    top: 1024px;
+    background: #EDECEC;
+  }
+  #im3{
+    position: relative;
+    left: 595px;
+    top: 90px;
+  }
+  #p5{
+    font-size: 54px;
+    position: relative;
+    top: 80px;
+
+    left:210px;
+    color: #323333;
+  }
+  #b4{
+    width: 1280px;
+    height: 341px;
+    background: url(img/bg4.jpg);
+    position: absolute;
+    top: 1384px;
+    left:50px;
+  }
+
+  #tb1,#tb2,#tb3{
+    width: 236px;
+    height: 36px;
+    position: relative;
+    top: 172px;
+  }
+  #tb1{
+    margin-left: 125px;
+  }
+  #tb2,#tb3{
+    margin-left: 32px;
+  }
+  #tb4{
+       width: 236px;
+    height: 39px;
+    position: relative;
+    top: 172px;
+    background: #BE4E48;
+    padding-top: 2px;
+    border: none;
+    color: #FFF;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    letter-spacing:16px;
+    margin-left: 32px;
+  }
+  .img6{
+    position: relative;
+    margin-left: -20px;
+    top: 172px;
+  }
+  #list{
+      width: 238px;
+  height: 170px;
+  border: 1px solid #D89995;
+  background: #E3E2E4;
+  position: relative;
+  top: 172px;
+  margin-left: 398px;
+  }
+  li{
+    list-style-type: none;
+    font-size: 4px;
+  }
+  .pro{
+    color: #777878;
+    margin-top: 14px;
+    margin-left: -11px;
+  }
+  #fir{
+    color: #FFF;
+    margin-left: -11px;
+    margin-top: -29px;
+  }
+  #img6{
+    margin-left: 9px;
+  }
+  #b41{
+    font-size: 21px;
+    color: #FFF;
+    margin-left: 498px;
+    font-family: "微软雅黑";
+    margin-top:-163px;
+  }
+  #b42{
+    font-family: "微软雅黑";
+    color: #FFF;
+    font-size: 12px;
+    margin-top: 52px;
+    margin-left: 470px;
+  }
+  #b5{
+    width: 1280px;
+    height: 603px;
+    background: #F7F7F7;
+    position: absolute;
+    top:1723px; 
+    left:50px;
+    z-index: -1;
+  }
+  #pic1{
+    position: relative;
+    top: 108px;
+    float: left;
+    left: 90px;
+  }
+
+  #pic2{
+    
+    margin-top: 154px;
+    float: left;
+    margin-left: 162px;
+
+  }
+  #pic3{
+   float: left;
+   margin-top: 108px;
+   margin-left: 75px;
+  }
+  #pic4{
+   float: left;
+   margin-top: 108px;
+   margin-left: 75px;
+  }
+  #bwen{
+  position: relative;
+  width: 957px;
+  height: 385px;
+  z-index: auto;
+  
+  margin-top: 112px;
+  margin-left: 151px;
+  }
+
+  #b51{
+    float: left;
+    color: #000;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    margin-left: -1022px;
+    margin-top: 335px;
+    
+  }
+  #b52{
+      float: left;
+    color: #D4D3D3;
+    font-family: "微软雅黑";
+    font-size: 16px;
+      margin-left: -1034px;
+  margin-top: 359px;
+  }
+  #b53{
+      letter-spacing: 39px;
+
+  color: #000;
+  font-family: "微软雅黑";
+  font-size: 16px;
+  margin-top: -338px;
+  margin-left: -201px;
+  float: left;
+  }
+  #b54{
+    float: left;
+    color: #D4D3D3;
+    font-family: "微软雅黑";
+    font-size: 16px;
+       margin-top: -316px;
+  margin-left: -176px;
+  }
+  #b55{
+      color: #000;
+  font-family: "微软雅黑";
+  font-size: 16px;
+  margin-top: 5px;
+  margin-left: 149px;
+  float: left;
+  }
+  #b56{
+       float: left;
+    color: #D4D3D3;
+    font-family: "微软雅黑";
+    font-size: 16px;
+       margin-top: 25px;
+  margin-left: -93px;
+  }
+   #b57{
+      color: #000;
+  font-family: "微软雅黑";
+  font-size: 16px;
+  margin-top: 5px;
+  margin-left: 167px;
+  float: left;
+  }
+  #b58{
+       float: left;
+    color: #D4D3D3;
+    font-family: "微软雅黑";
+    font-size: 16px;
+       margin-top:-17px;
+  margin-left: 148px;
+  }
+  #b6{
+    position: absolute;
+    height: 567px;
+    width: 1280px;
+    background:#FFF url(img/bg5.jpg)  no-repeat;
+    top: 2326px;
+    left:50px;
+  }
+  #b61{
+     position: relative;
+  float: right;
+  font-size: 30px;
+  font-family: "黑体";
+  right: 162px;
+  top: 111px;
+  }
+  #b62{
+    position: relative;
+    float: right;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    margin-top: 159px;
+    margin-right:-29px;
+    color: #C1C1C1;
+    line-height: 2;
+  }
+  #b63{
+    width: 106px;
+    height: 34px;
+    border: 1px solid red;
+    position: relative;
+    float: right;
+      right: -162px;
+  top: 331px;
+  }
+  #b64{
+    color: #E67275;
+    text-decoration: none;
+    line-height: 34px;
+    padding-left: 20px;
+    font-family: "微软雅黑";
+  }
+  #b65{
+    position: relative;
+    float: right;
+    right: -256px;
+    top: 383px;
+  }
+  .b651{
+    margin-left: 12px;
+  }
+  #b7{
+    width: 1280px;
+    height: 1269px;
+    background: #FFF;
+    position: absolute;
+    top: 2893px;
+    left:50px;
+  }
+  #b71{
+    background: #E74F4D;
+    float: left;
+    position: relative;
+    width: 426px;
+    height:521px;
+  }
+  #b711{
+    font-size: 21px;
+    color: #FFF;
+    position: relative;
+    top: 165px;
+    left: 132px;
+    line-height: 27px;
+  }
+  #b712{
+   border: 1px solid #FFF;
+  width: 162px;
+  height: 51px;
+
+  position: relative;
+  top: 300px;
+  left: 146px;
+  }
+  #b7121{
+      color: #FFF;
+      text-decoration: none;
+      font-size: 14px;
+      font-family: "微软雅黑";
+  }
+
+  #b72{
+    background: url(img/bg6.jpg) no-repeat;
+    float: right;
+    width: 430px;
+    height: 521px;
+    position: relative;
+    top: -143px;
+  }
+  #b731{
+     font-size: 21px;
+    color: #000;
+    position: relative;
+      top: 116px;
+  left: 141px;
+    line-height: 27px;
+  }
+  #bt7{
+      width: 168px;
+  height: 43px;
+  background: #FFF;
+  border: 1px solid red;
+  position: relative;
+  top: 159px;
+  left: 154px;
+  font-size: 20px;
+  font-family: "微软雅黑";
+  color: #F00;
+  }
+
+  #bt6{
+  width: 168px;
+  height: 43px;
+  background: #E74F4D;
+  border: 1px solid #FFF;
+  position: relative;
+  top: 298px;
+  color: #FFF;
+  left: -283px;
+  font-size: 20px;
+  font-family: "微软雅黑";
+  }
+
+  #b751{
+      position: relative;
+  top: 415px;
+  left: 127px;
+  }
+  #b752{
+      position: relative;
+  top: 424px;
+  left: 11px;
+  font-size: 12px;
+  font-family: "微软雅黑";
+  color: #C1C1C1;
+  line-height: 20px;
+  }
+  #pb1{
+        position: relative;
+  top: 500px;
+  left: -300px;
+  font-family: "微软雅黑";
+  font-weight: 800;
+  }
+  #pb2{
+      position: relative;
+  top: 507px;
+  left: -300px;
+  font-family: "微软雅黑";
+  line-height: 25px;
+  }
+  #pb3{
+      position: relative;
+  top: 551px;
+  font-family: "微软雅黑";
+  left: -300px;
+  font-weight: 800;
+  }
+  #pb4{
+      position: relative;
+  top: 566px;
+  left: -300px;
+  font-family: "微软雅黑";
+  }
+  #pb5{
+      font-family: "微软雅黑";
+  position: relative;
+  top: 593px;
+  left: -300px;
+  font-weight: 800;
+  }
+  #pb6{
+      position: relative;
+  top: 226px;
+  left: 484px;
+  }
+  #pb7{
+  position: relative;
+  top: 137px;
+  left: -34px;
+  }
+  #pb8{
+      position: relative;
+  top: 350px;
+  left: -34px;
+  }
+  #pb9{
+    position: relative;
+  top: 255px;
+  left: -34px;
+  }
+  #pbt10{
+        width: 311px;
+  height: 41px;
+  position: relative;
+  top: 230px;
+  left: 606px;
+  background: #EDECEE;
+  border: none;
+  }
+
+  #pbt11{
+      width: 311px;
+  height: 41px;
+  position: relative;
+  top: 295px;
+  left: 286px;
+  background: #EDECEE;
+  border: none;
+  }
+  #pbt12{
+      width: 311px;
+  height: 41px;
+  position: relative;
+  top: 187px;
+  left: 940px;
+  background: #EDECEE;
+  border: none;
+  }
+  #pbt13{
+      width: 311px;
+  height: 41px;
+  position: relative;
+  top: 251px;
+  left: 622px;
+  background: #EDECEE;
+  border: none;
+  }
+  #pbt14{
+      width: 643px;
+  height: 164px;
+  position: relative;
+  top: 273px;
+  left: 606px;
+  background: #EDECEE;
+  border: none;
+  }
+  #pbt15{
+      position: relative;
+  top: 295px;
+  left: 608px;
+  width: 637px;
+  border: none;
+  padding: 0;
+  height: 42px;
+  font-family: "微软雅黑";
+  font-weight: bold;
+  }
+
+  #b8{
+        position: absolute;
+  top: 4162px;
+  left: 50px;
+  background: #32353E;
+  height: 415px;
+  width: 1280px;
+  }
+  #b81{
+      position: relative;
+  top: 91px;
+  left: 602px;
+  color: #FFF;
+  font-family: "微软雅黑";
+  font-size: 20px;
+  }
+
+  #b82{
+      position: relative;
+  top: 80px;
+  left: 358px;
+  color: #FFF;
+  font-family: "微软雅黑";
+  font-size: 14px;
+  }
+
+  #b83{
+      position: relative;
+  top: 92px;
+  left: 358px;
+  width: 431px;
+  height: 41px;
+  padding-left: 14px;
+  }
+
+  #b84{
+     position: relative;
+  top: 91px;
+  left: 349px;
+  width: 81px;
+  height: 48px;
+  color: #FFF;
+  background: #6F7178;
+  padding: 0;
+  border: none;
+  }
+
+  #b85{
+      position: relative;
+  top: 190px;
+  left: -56px;
+  }
+
+  #b86{
+      position: relative;
+  top: 190px;
+  left: -35px;
+  }
+
+
+  #b87{
+      position: relative;
+  top: 190px;
+  left: -13px;
+  }
+
+  #b88{
+      position: relative;
+  top: 190px;
+  left: 6px;
+  }
+
+
+  #b89{
+      position: relative;
+  top: 209px;
+  left: 91px;
+  color: #FFF;
+  }
+
+  #b810{
+      position: relative;
+  top: 172px;
+  left: 1148px;
+  color: #FFF;
+  text-decoration: none;
+  }
+  </style>
+</head>
+<body>
+  <div id="nav">
+
+    <img src="img/logo.jpg" class="logo">
+    <img src="img/login.jpg" id="login">
+    <label>新世界</label>
+    <a href="#" class="topBar" id="lo">登录</a>
+    <a href="#" class="topBar">最新活动</a>
+    <a href="#" class="topBar">项目介绍</a>
+    <a href="#" class="topBar">爱心社区</a>
+    <a href="#" class="topBar" >关于我们</a>
+    
+    <a href="#" class="topBar" id="abo">首页</a>
+    <div id="line"></div>
+    </div>
+    <div id="b1">
+      <h1>Time of new life</h1>
+      <p id="text1">新时代，年轻的人们让我们一起<br>体验新生活，享受新生活</p>
+      <input type="button" value="开始体验" id="btn1">
+    </div>
+    <div id="b2">
+    <div id="im">
+      <img src="img/icon1.jpg" class="icon1">
+      <img src="img/icon2.jpg" class="icon2">
+      <img src="img/icon3.jpg" class="icon3">
+      <img src="img/icon4.jpg" class="icon4">
+    </div>
+    <div id="tx">
+      <p class="p1">打造全新世界观，让你更<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;爱你的生活</p>
+      <div id="d1"></div>
+      <p class="p2">丰富多彩的公益活动，发<br>&nbsp;挥新世界的主人公意识</p>
+      <div id="d2"></div>
+      <p class="p3">时尚的新理念，超前体验<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;未知的生活</p>
+      <div id="d3"></div>
+      <p class="p4">完善的培养机制，培养你<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全新的世界观</p>
+    </div>
+    </div>
+    <div id="b3">
+      <img src="img/icon5.jpg" id="im3">
+      <p id="p5">关于新世界，你不知道的还有什么？</p>
+    </div>
+    <div id="b4">
+    
+      <input type="text" id="tb1" value="中国"><img src="img/icon6.jpg" class="img6">
+      <input type="text" id="tb2" value="省份"><img src="img/icon6.jpg" class="img6">
+      <input type="text" id="tb3" value="城市"><img src="img/icon6.jpg" class="img6">
+      <input type="button" id="tb4" value="搜索">
+      <div id="list">
+      <img src="img/icon7.jpg" id="img6">
+        <ul id="pul">
+        
+          <li id="fir">北京市</li>
+          <li class="pro">天津市</li>
+          <li class="pro">河北省</li>
+          <li class="pro">山西省</li>
+          <li class="pro">内蒙古自治区</li>
+          <li class="pro">辽宁省</li>
+        </ul>
+      </div>
+      <p id="b41">查找新世界城市活动信息</p>
+    <p id="b42">每个城市的有不同的活动信息，请自主查询您所需要了解</p>
+    </div>
+    <div id="b5">
+
+      <img src="img/pic1.jpg" id="pic1">
+      <img src="img/pic2.jpg" id="pic2">
+      <img src="img/pic3.jpg" id="pic3">
+      <img src="img/pic4.jpg" id="pic4">
+    <div id="bwen">
+    
+ 
+      <p id="b51">北京活动</p>
+      <p id="b52">新社区大联盟</p>
+   
+      <p id="b53">上海活动</p>
+      <p id="b54">夜上海新景观探索</p>
+      <p id="b55">深圳活动</p>
+      <p id="b56">全新海岸线观点站</p>
+      <p id="b57">香港活动</p>
+      <p id="b58">奢侈消费大派送</p>
+    </div>
+    </div>
+    <div id="b6">
+      <div id="b61">新世界/01</div>
+      <div id="b62">新世界是个新世界新世界是个新世界
+      <br>新世界是个新世界新世界是个新世界 
+      <br>新世界是个新世界新世界是个新世界
+      <br>新世界是个新世界新世界
+       </div>
+       <div id="b63">
+         <a href="#" id="b64">更多详情</a>
+       </div>
+       <div id="b65">
+       <img src="img/icon8.jpg" class="b651">
+       <img src="img/icon9.jpg" class="b651">
+       <img src="img/icon9.jpg" class="b651">
+       </div>
+    </div>
+    <div id="b7">
+      <div id="b71">
+        <p id="b711">&nbsp;&nbsp;新时代<br>
+        关于热爱生活的我们</p>
+      </div>
+
+       <a href="#"><input type="button" id="bt6" value="查看详情"></a>
+      
+        <p id="b731">&nbsp;&nbsp;新时代<br>
+        关于热爱生活的我们</p>
+        <a href="#"><input type="button" id="bt7" value="查看详情"></a>
+      <div id="b72"></div>
+     
+        <h2 id="b751">成为我们的志愿者</h2>
+        <p id="b752">新世界的大家庭需要每一个爱生活的人的加入，如果你够年轻，有梦想，有激情<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;那就不要犹豫，快来加入我们，成为改变所有人生活的人
+        </p>
+        <p id="pb1">新世界志愿者协议</p>
+        <p id="pb2">加入新世界志愿者的人员必须遵守中华人民共共和国的 <br>
+        相关法律法规，并且本着平等自愿的原则....
+        </p>
+        <p id="pb3">新世界志愿者权利</p>
+        <p id="pb4">新世界志愿者享受新世界内部所有资源共享的权利，并<br>且享受所在四新世界活动的优先参与资格</p>
+        <p id="pb5">更多条款</p>
+        <div id="pb6">
+        <div id="pb7">
+        <img src="img/icon10.jpg" i>more</div>
+        <div id="pb8"><img src="img/icon10.jpg" >more</div>
+        
+        <div id="pb9"><img src="img/icon10.jpg" >more</div>
+        </div>
+        <input type="text" id="pbt10" placeholder="姓名：">
+        <input type="text" id="pbt11" placeholder="联系方式：">
+        <input type="text" id="pbt12" placeholder="年龄：">
+        <input type="text" id="pbt13" placeholder="联系地址：">
+        <input type="textArea" id="pbt14" placeholder="请简单描述您梦想的生活：">
+         <input type="button" id="pbt15" value="提交申请">
+    </div>
+    <div id="b8">
+      <p id="b81">联系我们</p>
+      <p id="b82">为了更好的获取我们最新的产品咨询，您可以留下您的
+      电子邮件快速订阅我们的产品咨询<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      也可以通过以下任何方式关注我们的动态
+
+      </p>
+      <input type="text" id="b83" placeholder="someone@email.com">
+      <input type="button" id="b84" value="提交">
+      <img src="img/icon11.jpg" id="b85">
+      <img src="img/icon12.jpg" id="b86">
+      <img src="img/icon13.jpg" id="b87">
+      <img src="img/icon14.jpg" id="b88">
+      <p id="b89">@2016新世界</p>
+      <a href="#" id="b810">Back to top</a>
+    </div>
+</body>
+</html>
